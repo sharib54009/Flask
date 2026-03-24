@@ -1,6 +1,6 @@
 Todos = []
 while True:
-    User_Action = input("Type add, show or exit: ")
+    User_Action = input("Type add, show or exit : ")
 
     match User_Action:
         case 'add':
