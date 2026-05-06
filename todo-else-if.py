@@ -1,0 +1,56 @@
+def get_todos():
+    with open('todos.txt', 'r') as file:
+        todos = file.readlines()
+    return todos
+
+while True:
+    user_action = input("Type add, show, edit, complete or exit : ")
+    user_action = user_action.strip()
+
+
+    if user_action.startswith('add'):
+        todo = user_action[4:]
+
+        todos = get_todos()
+        todos.append(todo + '\n')
+
+        with open('todos.txt', 'w') as file:
+            file.writelines(todos)
+
+
+    elif user_action.startswith('show'):
+
+        todos = get_todos()
+
+        for idx, items in enumerate(todos):
+            items = items.strip('\n')
+            print(idx + 1, items)
+
+
+    elif user_action.startswith('edit'):
+        try:            
+            number = int(user_action[5:])
+            number = number - 1
+
+            todos = get_todos()
+
+            new_todo = input("Enter new todo : ")
+            todos[number] = new_todo + '\n'
+            with open('todos.txt', 'w') as file:
+                file.writelines(todos)  
+        except ValueError:
+            print("Your command is not valid.")
+            continue
+        
+    elif user_action.startswith('complete'):
+        try:
+            number = int(user_action[9:])    
+            todos = get_todos()
+            todos.pop(number - 1)
+            with open('todos.txt', 'w') as file:                
+                file.writelines(todos)
+        except ValueError:
+            print("Your command is not valid.")
+            continue    
+    elif user_action.startswith('exit'):
+        break

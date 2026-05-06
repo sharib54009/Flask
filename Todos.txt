@@ -1,5 +1,11 @@
 add
 show
 edit
-help
+hi
 groe
+add thorw the trash
+eat
+have
+do
+hey
+bay
