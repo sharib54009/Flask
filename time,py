@@ -1,0 +1,4 @@
+import time 
+currtime = time.strftime("%b %a %d %Y %H:%M:%S", time.localtime())
+
+print(currtime)
