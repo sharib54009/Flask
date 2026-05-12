@@ -1,10 +1,10 @@
-FILEPATH = "todo_items.txt"
+FILEPATH = "Todos.txt"
 
 def get_todos(filename = FILEPATH):
     """Read a text file and return the list of to-do items."""
     with open(filename, 'r') as file_local:
         todos = file_local.readlines()
-    return file_local
+    return todos
 
 def write_todos(todos_arg, filename = FILEPATH):
     """Write the to-do items list in the text file."""
