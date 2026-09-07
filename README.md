@@ -30,17 +30,3 @@ Some of the topics covered in this repository:
 * Todo-list programs
 * Basic data handling
 
-## Some Practice Projects
-
-A few of the programs I worked on include:
-
-* Todo list programs
-* ZIP file creator and converter
-* File handling exercises
-* CSV and JSON practice
-* Basic GUI programs
-* Web browser practice
-* List manipulation
-* Functions and conditional logic
-* Small Python utilities
-
