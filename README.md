@@ -44,9 +44,3 @@ A few of the programs I worked on include:
 * Functions and conditional logic
 * Small Python utilities
 
-## Why I Created This
-
-I created this repository while learning Python as an **engineering student**.
-
-Instead of only following tutorials, I wanted to write small programs and experiment with the concepts I was learning. These exercises helped me build a better understanding of Python before moving into **Flask and web development**.
-
